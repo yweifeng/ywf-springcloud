@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: admin-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        # 命名空间
+        namespace: c2efbc9a-03c3-46ab-9487-94b6e9e6fc53
+  profiles:
+    active: dev
+server:
+  port: 8888

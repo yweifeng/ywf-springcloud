@@ -1,0 +1,11 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        # 命名空间
+        namespace: c2efbc9a-03c3-46ab-9487-94b6e9e6fc53
