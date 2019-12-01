@@ -2,6 +2,7 @@ package com.ywf.service.impl;
 
 import com.codingapi.txlcn.tc.annotation.DTXPropagation;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import com.codingapi.txlcn.tc.annotation.TccTransaction;
 import com.codingapi.txlcn.tc.annotation.TxcTransaction;
 import com.ywf.entity.User;
 import com.ywf.mapper.UserMapper;

@@ -1,6 +1,9 @@
 package com.ywf.service.impl;
 
+import com.codingapi.txlcn.tc.annotation.DTXPropagation;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import com.codingapi.txlcn.tc.annotation.TccTransaction;
+import com.codingapi.txlcn.tc.annotation.TxcTransaction;
 import com.mysql.cj.log.LogFactory;
 import com.ywf.client.TxLcnServiceBClient;
 import com.ywf.client.TxLcnServiceCClient;
@@ -32,8 +35,8 @@ public class TxLcnServiceImpl implements ITxLcnService {
     private TxLcnServiceCClient serviceCClient;
 
     @Override
-    @LcnTransaction
     @Transactional
+    @LcnTransaction
     public String rpc(String flag) {
 
         // 调用txlcn-service-b
